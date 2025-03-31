@@ -146,7 +146,7 @@ const BlogDetailsMain = () => {
                       <div className="it-contact__text pb-30">
                         <h5 className="it-contact__title">
                           Let’s Get in Touch
-                        </h5>
+                        </h5> 
                         <p>
                           Your email address will not be published. Required
                           fields are marked *

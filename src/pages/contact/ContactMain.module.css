@@ -1,0 +1,34 @@
+/* contactMain.module.css */
+.it-contact__titles {
+  text-align: center;
+  padding-bottom: 30px;
+  line-height: 1.3; /* Default line height */
+}
+
+@media (max-width: 576px) {
+  .it-contact__titles {
+    font-size: 1.2rem; /* Small */
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 768px) {
+  .it-contact__titles {
+    font-size: 1.4rem; /* Medium */
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 992px) {
+  .it-contact__titles {
+    font-size: 1.8rem; /* Large */
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 1200px) {
+  .it-contact__titles {
+    font-size: 2rem; /* Extra Large */
+    line-height: 1.7;
+  }
+}
