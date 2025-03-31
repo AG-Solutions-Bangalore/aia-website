@@ -11,10 +11,16 @@ import Course from "./CourseSection";
 // import FunFact from './FunFactSection';
 import Team from "./TeamSection";
 import Testimonial from "./TestimonialSection";
+import { Helmet } from "react-helmet-async";
+import MetaTitle from "../../components/MetaTitle/MetaTitle";
 
 const AboutMain = () => {
   return (
     <main>
+      <MetaTitle
+        title="About - Academy of Internal Audit"
+        description="Academy of Internal Audit is a well-known Training Institute for Professional Courses Training, skilled faculty, and comprehensive guidance services."
+      />
       <AboutBreadcrumb title="Who We Are" />
       <div className="p-2">
         <About />
