@@ -71,7 +71,7 @@ function App() {
       <ScrollToTop />
       <LoadTop />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomeFive />} />
         <Route path="/home-one-page" element={<HomeOnePage />} />
         <Route path="/home-2" element={<HomeTwo />} />
         <Route path="/home-2-one-page" element={<HomeTwoOnePage />} />
@@ -79,7 +79,7 @@ function App() {
         <Route path="/home-3-one-page" element={<HomeThreeOnePage />} />
         <Route path="/home-4" element={<HomeFour />} />
         <Route path="/home-4-one-page" element={<HomeFourOnePage />} />
-        <Route path="/home-5" element={<HomeFive />} />
+        <Route path="/home-5" element={<Home />} />
         <Route path="/home-5-one-page" element={<HomeFiveOnePage />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/course-1" element={<CourseOne />} />

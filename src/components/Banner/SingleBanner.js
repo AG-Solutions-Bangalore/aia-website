@@ -6,7 +6,7 @@ import { useVideoContext } from '../../context/VideoContext';
 import Image from '../../assets/img/slider/thumb-5-1.jpg';
 
 const SingleBanner = (props) => {
-  const { itemClass, sliderImage, title, description, btnText } = props;
+  const { itemClass, sliderImage, title, description, btnText,altText } = props;
   const { setVideoId, setOpen, stopAutoplay } = useVideoContext();
 
   const openModal = () => {
@@ -26,6 +26,8 @@ const SingleBanner = (props) => {
       <div
         className="ed-slider-3-bg"
         style={{ backgroundImage: `url(${sliderImage ? sliderImage : Image})` }}
+          aria-label={altText || "Banner image"}
+        role="img"
       ></div>
       <div className="container">
         <div className="row">
@@ -34,18 +36,18 @@ const SingleBanner = (props) => {
               <div className="ed-slider-title text-white pb-5">
                 {title
                   ? title
-                  : 'We Lead A Professional Generation for the future.'}
+                  : ''}
               </div>
-              <div className="ed-slider-3-text">
+              {/* <div className="ed-slider-3-text">
                 <div>
                   <p className="text-white">
                     {description
                       ? description
-                      : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'}
+                      : 'desc'}
                   </p>
                 </div>
-              </div>
-              <div className="ed-slider-3-button-wrapper">
+              </div> */}
+              {/* <div className="ed-slider-3-button-wrapper">
                 <div className="ed-slider-3-button d-flex align-content-center ">
                   <Link className="ed-btn-square orange mr-25" to="/about-us">
                     {btnText ? btnText : 'discover more'}
@@ -66,7 +68,7 @@ const SingleBanner = (props) => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

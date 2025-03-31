@@ -84,17 +84,17 @@ const MenuItems = (props) => {
               <div className="home-img-thumb mb-15">
                 <img src={homeImg1} alt="" />
                 <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="/">
+                  <Link className="it-btn-white-sm" to="#">
                     Multi Page
                   </Link>
-                  <Link className="it-btn-white-sm" to="/home-one-page">
+                  <Link className="it-btn-white-sm" to="#">
                     One Page
                   </Link>
                 </div>
               </div>
               <div className="home-img-content text-center">
                 <h4 className="home-img-title">
-                  <Link to="/">Home 01</Link>
+                  <Link to="#">Home 01</Link>
                 </h4>
               </div>
             </div>
@@ -102,17 +102,17 @@ const MenuItems = (props) => {
               <div className="home-img-thumb mb-15">
                 <img src={homeImg2} alt="" />
                 <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="/home-2">
+                  <Link className="it-btn-white-sm" to="#">
                     Multi Page
                   </Link>
-                  <Link className="it-btn-white-sm" to="/home-2-one-page">
+                  <Link className="it-btn-white-sm" to="#">
                     One Page
                   </Link>
                 </div>
               </div>
               <div className="home-img-content text-center">
                 <h4 className="home-img-title">
-                  <Link to="/home-2">Home 02</Link>
+                  <Link to="#">Home 02</Link>
                 </h4>
               </div>
             </div>
@@ -120,17 +120,17 @@ const MenuItems = (props) => {
               <div className="home-img-thumb mb-15">
                 <img src={homeImg3} alt="" />
                 <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="/home-3">
+                  <Link className="it-btn-white-sm" to="#">
                     Multi Page
                   </Link>
-                  <Link className="it-btn-white-sm" to="/home-3-one-page">
+                  <Link className="it-btn-white-sm" to="#">
                     One Page
                   </Link>
                 </div>
               </div>
               <div className="home-img-content text-center">
                 <h4 className="home-img-title">
-                  <Link to="/home-3">Home 03</Link>
+                  <Link to="#">Home 03</Link>
                 </h4>
               </div>
             </div>
@@ -138,17 +138,17 @@ const MenuItems = (props) => {
               <div className="home-img-thumb mb-15">
                 <img src={homeImg4} alt="" />
                 <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="/home-4">
+                  <Link className="it-btn-white-sm" to="#">
                     Multi Page
                   </Link>
-                  <Link className="it-btn-white-sm" to="/home-4-one-page">
+                  <Link className="it-btn-white-sm" to="#">
                     One Page
                   </Link>
                 </div>
               </div>
               <div className="home-img-content text-center">
                 <h4 className="home-img-title">
-                  <Link to="/home-4">Home 04</Link>
+                  <Link to="#">Home 04</Link>
                 </h4>
               </div>
             </div>
@@ -156,17 +156,17 @@ const MenuItems = (props) => {
               <div className="home-img-thumb mb-15">
                 <img src={homeImg5} alt="" />
                 <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="/home-5">
+                  <Link className="it-btn-white-sm" to="#">
                     Multi Page
                   </Link>
-                  <Link className="it-btn-white-sm" to="/home-5-one-page">
+                  <Link className="it-btn-white-sm" to="#">
                     One Page
                   </Link>
                 </div>
               </div>
               <div className="home-img-content text-center">
                 <h4 className="home-img-title">
-                  <Link to="/home-5">Home 05</Link>
+                  <Link to="#">Home 05</Link>
                 </h4>
               </div>
             </div>
@@ -179,11 +179,7 @@ const MenuItems = (props) => {
         </Link>
       </li>
       <li className="has-dropdown">
-        <Link
-          to="/course-details"
-          className={course ? "expanded" : ""}
-          onClick={handleClick}
-        >
+        <Link to="#" className={course ? "expanded" : ""} onClick={handleClick}>
           <span>Courses</span>
           <button
             className={`${
@@ -204,10 +200,10 @@ const MenuItems = (props) => {
           }
         >
           <li>
-            <Link to="/cfe-curriculum">CFE Curriculum</Link>
+            <Link to="#">CFE Curriculum</Link>
           </li>
           <li>
-            <Link to="/cia-curriculum">CIA Curriculum</Link>
+            <Link to="#">CIA Curriculum</Link>
           </li>
           {/* <li>
             <Link to="/course-details" >CIA Challenge</Link>
@@ -215,7 +211,7 @@ const MenuItems = (props) => {
             <ul>CIA Challenge Prep Course</ul>
           </li> */}
           <li className="has-dropdown">
-            <Link to="/course-details" className={cia ? "expanded" : ""}>
+            <Link to="#" className={cia ? "expanded" : ""}>
               CIA Challenge
               <button
                 className={`${
@@ -234,12 +230,10 @@ const MenuItems = (props) => {
             {/* Submenu for CIA Challenge */}
             <ul className={cia ? "d-block" : "it-submenu submenu"}>
               <li>
-                <Link to="/cia-challenge-curriculum">
-                  CIA Challenge Curriculum
-                </Link>
+                <Link to="#">CIA Challenge Curriculum</Link>
               </li>
               <li>
-                <Link to="/cia-challenge-prep">CIA Challenge Prep Course</Link>
+                <Link to="#">CIA Challenge Prep Course</Link>
               </li>
             </ul>
           </li>
@@ -288,10 +282,10 @@ const MenuItems = (props) => {
           className={blog ? "it-submenu submenu d-block" : "it-submenu submenu"}
         >
           <li>
-            <Link to="/blog-1">Blog</Link>
+            <Link to="#">Blog</Link>
           </li>
           <li>
-            <Link to="/blog-2">Our Passout</Link>
+            <Link to="#">Our Passout</Link>
           </li>
         </ul>
       </li>

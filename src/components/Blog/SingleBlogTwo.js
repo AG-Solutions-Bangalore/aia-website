@@ -8,9 +8,11 @@ const SingleBlogTwo = (props) => {
   const {
     itemClass,
     blogImage,
+    blogAlt,
     authorName,
     publishedDate,
     title,
+    description,
     btnClass,
     btnText,
     hasArrow,
@@ -19,11 +21,13 @@ const SingleBlogTwo = (props) => {
     <div className={itemClass ? itemClass : 'it-blog-item'}>
       <div className="it-blog-thumb mb-0 fix">
         <Link to="/blog-details">
-          <img src={blogImage ? blogImage : Image} alt="" />
+          <img style={{
+            height: '15rem',
+          }} src={blogImage ? blogImage : Image} alt={blogAlt || ''} />
         </Link>
       </div>
       <div className="it-blog-content">
-        <div className="it-blog-meta pb-25">
+        <div className="it-blog-meta pb-2">
           <span>
             <i className="fa-light fa-user"></i>
             {authorName ? authorName : 'Sunilra smoth'}
@@ -33,13 +37,24 @@ const SingleBlogTwo = (props) => {
             {publishedDate ? publishedDate : 'March 28, 2023'}
           </span>
         </div>
-        <h4 className="it-blog-title pb-5">
+        <h4 style={{
+          fontSize: '18px',
+        }} className="it-blog-title pb-0">
           <Link to="/blog-details">
             {title
               ? title
               : 'Lorem ipsum dolor sit amet, consectetur Adipiscing elit, sed do.'}
           </Link>
         </h4>
+        {description && (
+          <p style={{
+            height: '10rem',
+          }} className="it-blog-description pb-15">
+            {description.length > 150 
+              ? `${description.substring(0, 150)}...` 
+              : description}
+          </p>
+        )}
         <Link
           className={btnClass ? btnClass : 'ed-btn-square purple-3'}
           to="/blog-details"
@@ -52,4 +67,5 @@ const SingleBlogTwo = (props) => {
     </div>
   );
 };
+
 export default SingleBlogTwo;

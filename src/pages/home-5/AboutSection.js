@@ -5,7 +5,7 @@ import RightArrow from '../../components/SVG';
 
 import shapeImg1 from '../../assets/img/about/ed-shape-2.png';
 import shapeImg2 from '../../assets/img/about/ed-shape-1.png';
-import aboutImg1 from '../../assets/img/about/ed-5-1.jpg';
+import aboutImg1 from '../../assets/img/about/home_about.jpg';
 import aboutImg2 from '../../assets/img/about/ed-5-2.jpg';
 
 const About = () => {
@@ -23,15 +23,17 @@ const About = () => {
                 subTitleClass="ed-section-subtitle"
                 subTitle="our about us"
                 titleClass="it-section-title-5"
-                title="We Are High School Since 10 Years Experience"
+                title="ACADEMY OF INTERNAL AUDIT"
               />
               <div className="it-about-5-text mb-30">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do <br /> eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut <br /> enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris <br /> nisi ut aliquip ex ea
-                  commodo consequat.
+                  
+                AIA is an online training institute to secure success in international certification courses. With the proven study material, we are committed towards success in professional courses for our students and help them grow in their professional journey.
+                                                        <br /> 
+                                                        We are pleased to say that our faculty has always been our greatest strength who is always ready to assist students with his knowledge theoretically and practically. We help aspirants not only how to obtain international certifications, but also how to have them in the real sense so that they can demonstrate the same skills and competence in relevant areas as well.
+                                                        <br /> 
+                                                        Since 15 years, AIA has been teaching commerce students under the name of Perfect Coaching Centre and now providing guidance for Top Certification Courses as well.
+                                                    
                 </p>
               </div>
               <div className="ed-about-5-content">
@@ -61,7 +63,7 @@ const About = () => {
                   className="ed-btn-square orange"
                   to="/student-registration"
                 >
-                  admission open
+                  Read More
                   <i>
                     <RightArrow />
                   </i>
@@ -75,7 +77,7 @@ const About = () => {
                 <img src={aboutImg1} alt="" />
               </div>
               <div className="ed-about-5-thumb-1">
-                <img src={aboutImg2} alt="" />
+                {/* <img src={aboutImg2} alt="" /> */}
               </div>
               <div className="ed-about-5-shape-1">
                 <img src={shapeImg2} alt="" />

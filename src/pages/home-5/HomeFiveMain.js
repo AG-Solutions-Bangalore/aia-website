@@ -10,20 +10,28 @@ import Testimonial from './TestimonialSection';
 import Video from './VideoSection';
 import WhyChooseUs from './WhyChooseUsSection';
 import Work from './WorkSection';
+import YoutubeChanel from './YoutubeChanel';
+import AlumniWork from './AlumniWork';
 
 const HomeFiveMain = () => {
   return (
     <main>
       <Banner />
-      <Feature />
-      <About />
       <CTA />
       <Course />
+      <About />
       <WhyChooseUs />
-      <Testimonial />
-      <Video />
-      <FAQ />
-      <Work />
+     <YoutubeChanel/>
+     <Testimonial />
+      {/* <Feature /> */}
+
+    <AlumniWork/>
+     
+    
+      
+      {/* <Video /> */}
+      {/* <FAQ /> */}
+      {/* <Work /> */}
       <Blog />
     </main>
   );
