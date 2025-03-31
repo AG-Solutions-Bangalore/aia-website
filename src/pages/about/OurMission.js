@@ -6,7 +6,7 @@ const OurMission = () => {
   return (
     <div
       id="it-mission"
-      className="it-about-3-area fix pt-60 pb-60 p-relative"
+      className="it-about-3-area fix pt-60 pb-60 p-relative "
     >
       <div className="container">
         <div className="row align-items-center">
@@ -30,7 +30,7 @@ const OurMission = () => {
               <h2 className="fw-bold">Our Mission</h2>
 
               {/* Mission Statement */}
-              <p>
+              <p style={{ fontSize: "16px", textAlign: "justify" }}>
                 Our Mission is to provide the best training, study material, and
                 complete guidance related to Global Certifications to the
                 aspirants at the lowest possible cost. We aim to ensure that

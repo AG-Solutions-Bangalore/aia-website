@@ -35,6 +35,9 @@ const AboutFaculty = () => {
             data-wow-duration=".9s"
             data-wow-delay=".7s"
           >
+            <h2 className="it-section-title-2 pb-30 text-start">
+              FACULITY MEMBER
+            </h2>
             <div className="it-about-3-title-box mt-4 text-start">
               <p>
                 Puneet Garg is a qualified Chartered Accountant (CA), Company

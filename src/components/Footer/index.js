@@ -159,7 +159,7 @@ const Footer = (props) => {
                 <h4 className="it-footer-title">Contact Us</h4>
                 <div className="it-footer-contact">
                   <p style={{ marginBottom: '15px', lineHeight: '1.6' ,color:"white"}}>
-                    <strong>ACADEMY OF INTERNAL AUDIT</strong>
+                    <strong>ACADEMY OF INTERNAL AUDIT </strong>
                   </p>
                   <p style={{ marginBottom: '15px', lineHeight: '1.6',color:"white" }}>
                     C-826, Vipul Plaza, Sector-81,<br />

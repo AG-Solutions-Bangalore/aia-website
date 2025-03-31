@@ -40,7 +40,7 @@ const OurVision = () => {
               <h2 className="fw-bold">Our Vision</h2>
 
               {/* Mission Statement */}
-              <p>
+              <p style={{ fontSize: "16px", textAlign: "justify" }}>
                 Our Vision is to make all concerned professionals : learn the
                 right skills, grow in their career across the globe and
                 demonstrate their professional excellence in true spirits while
