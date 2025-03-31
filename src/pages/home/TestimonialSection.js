@@ -42,7 +42,7 @@ const Testimonial = () => {
               <SectionTitle
                 itemClass="it-testimonial-title-box text-center"
                 subTitle="testimonial"
-                title="Creating A Community Of Life Long Learners."
+                title="Creating  A Community Of Life Long Learners."
               />
             </div>
           </div>

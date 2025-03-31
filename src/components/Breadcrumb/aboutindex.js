@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import breadcrumbBG from "../../assets/img/breadcrumb/breadcrumb.jpg";
+// import breadcrumbBG from '../../assets/img/breadcrumb/breadcrumb.jpg';
+import breadcrumbBG from "../../assets/img/about/banner.jpg";
 import shapeImg1 from "../../assets/img/breadcrumb/shape-1-1.png";
 import shapeImg2 from "../../assets/img/breadcrumb/shape-1-2.png";
 import shapeImg3 from "../../assets/img/breadcrumb/shape-1-3.png";
 import shapeImg4 from "../../assets/img/breadcrumb/shape-1-4.png";
 
-const Breadcrumb = (props) => {
+const AboutBreadcrumb = (props) => {
   const { itemClass, title, subTitle } = props;
   return (
     <div
@@ -17,13 +18,15 @@ const Breadcrumb = (props) => {
           : "it-breadcrumb-area fix it-breadcrumb-bg p-relative"
       }
       style={{ backgroundImage: `url(${breadcrumbBG})` }}
+      role="img"
+      aria-label="Who we are - Academy of Internal Audit"
     >
       <div className="it-breadcrumb-shape-1 d-none d-md-block">
         <img src={shapeImg1} alt="" />
       </div>
-      <div className="it-breadcrumb-shape-2 d-none d-md-block">
+      {/* <div className="it-breadcrumb-shape-2 d-none d-md-block">
         <img src={shapeImg2} alt="" />
-      </div>
+      </div> */}
       <div className="it-breadcrumb-shape-3 d-none d-md-block">
         <img src={shapeImg3} alt="" />
       </div>
@@ -33,13 +36,13 @@ const Breadcrumb = (props) => {
       <div className="container">
         <div className="row ">
           <div className="col-md-12">
-            <div className="it-breadcrumb-content z-index-3 text-center">
+            <div className="it-breadcrumb-content z-index-3 text-start">
               <div className="it-breadcrumb-title-box">
                 <h3 className="it-breadcrumb-title">
                   {title ? title : "about us"}
                 </h3>
               </div>
-              <div className="it-breadcrumb-list-wrap">
+              {/* <div className="it-breadcrumb-list-wrap">
                 <div className="it-breadcrumb-list">
                   <span>
                     <Link to="/">home</Link>
@@ -49,7 +52,7 @@ const Breadcrumb = (props) => {
                     {subTitle ? subTitle : title ? title : "about us"}
                   </span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -57,4 +60,4 @@ const Breadcrumb = (props) => {
     </div>
   );
 };
-export default Breadcrumb;
+export default AboutBreadcrumb;

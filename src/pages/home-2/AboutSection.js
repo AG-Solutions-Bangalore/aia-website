@@ -47,7 +47,7 @@ const About = () => {
                 <img src={titleImg} alt="" /> about us
               </span>
               <h2 className="it-section-title-3 pb-30">
-                Benefit from our online learning expertise earn{' '}
+                Benefit n  from our online learning expertise earn{' '}
                 <span>professional</span>
               </h2>
               <p>

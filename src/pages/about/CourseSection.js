@@ -26,7 +26,7 @@ const Course = () => {
                 subTitleClass="ed-section-subtitle"
                 subTitle="Our Courses"
                 titleClass="ed-section-title"
-                title="Creating A Community Of Life Long Learners."
+                title="Creating  A Community Of Life Long Learners."
               />
             </div>
             <div className="col-xl-6">
