@@ -2,13 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import bgImg from '../../assets/img/footer/bg-1-1.jpg';
-import Logo from '../../assets/img/logo/logo-white.png';
-import footerImg1 from '../../assets/img/footer/thumb-1-1.png';
-import footerImg2 from '../../assets/img/footer/thumb-1-2.png';
-import footerImg3 from '../../assets/img/footer/thumb-1-3.png';
-import footerImg4 from '../../assets/img/footer/thumb-1-4.png';
-import footerImg5 from '../../assets/img/footer/thumb-1-5.png';
-import footerImg6 from '../../assets/img/footer/thumb-1-6.png';
+import LogoWhite from "../../assets/img/logo/retina_logos.png";
+
 
 const Footer = (props) => {
   const { footerClass, footerLogo, copyrightTextClass } = props;
@@ -33,14 +28,14 @@ const Footer = (props) => {
               <div className="it-footer-widget footer-col-1">
                 <div className="it-footer-logo pb-25">
                   <Link to="/">
-                    <img src={footerLogo ? footerLogo : Logo} alt="" />
+                    <img src={footerLogo ? footerLogo : LogoWhite} alt="Academy of Internal Audit Logo" />
                   </Link>
                 </div>
                 <div className="it-footer-text pb-5">
                   <p>
-                    Interdum velit laoreet id donec ultrices <br />
-                    tincidunt arcu. Tincidunt tortor aliquam nulla facilisi cras
-                    fermentum odio eu.
+                    Academy of Internal Audit is a premier institution dedicated to 
+                    providing world-class training and certification programs for 
+                    internal auditors and fraud examiners.
                   </p>
                 </div>
                 <div className="it-footer-social">
@@ -51,7 +46,7 @@ const Footer = (props) => {
                     <i className="fa-brands fa-instagram"></i>
                   </a>
                   <a href="#">
-                    <i className="fa-brands fa-pinterest-p"></i>
+                    <i className="fa-brands fa-linkedin-in"></i>
                   </a>
                   <a href="#">
                     <i className="fa-brands fa-twitter"></i>
@@ -65,35 +60,42 @@ const Footer = (props) => {
               data-wow-delay=".5s"
             >
               <div className="it-footer-widget footer-col-2">
-                <h4 className="it-footer-title">our services:</h4>
+                <h4 className="it-footer-title">Courses:</h4>
                 <div className="it-footer-list">
                   <ul>
                     <li>
                       <a href="#">
-                        <i className="fa-regular fa-angle-right"></i>Web
-                        development
+                        <i className="fa-regular fa-angle-right"></i>CFE Curriculum
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa-regular fa-angle-right"></i>UI/UX
-                        Design
+                        <i className="fa-regular fa-angle-right"></i>Become CFE in Just 30 Days
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa-regular fa-angle-right"></i>Management
+                        <i className="fa-regular fa-angle-right"></i>CIA Curriculum
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa-regular fa-angle-right"></i>Digital
-                        Marketing
+                        <i className="fa-regular fa-angle-right"></i>Become CIA in Just 90 Days
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa-regular fa-angle-right"></i>Blog News
+                        <i className="fa-regular fa-angle-right"></i>CIA Challenge Curriculum
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fa-regular fa-angle-right"></i>CIA Challenge Prep Course
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fa-regular fa-angle-right"></i>CAMS
                       </a>
                     </li>
                   </ul>
@@ -106,36 +108,43 @@ const Footer = (props) => {
               data-wow-delay=".7s"
             >
               <div className="it-footer-widget footer-col-3">
-                <h4 className="it-footer-title">quick links:</h4>
+                <h4 className="it-footer-title">Quick Links:</h4>
                 <div className="it-footer-list">
                   <ul>
                     <li>
-                      <a href="#">
-                        <i className="fa-regular fa-angle-right"></i>templates
-                      </a>
+                      <Link to="/">
+                        <i className="fa-regular fa-angle-right"></i>Home
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa-regular fa-angle-right"></i>blog and
-                        article
-                      </a>
+                      <Link to="/about">
+                        <i className="fa-regular fa-angle-right"></i>About Us
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa-regular fa-angle-right"></i>
-                        integrations
-                      </a>
+                      <Link to="/blog">
+                        <i className="fa-regular fa-angle-right"></i>Blog
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa-regular fa-angle-right"></i>webinars
-                      </a>
+                      <Link to="/passout">
+                        <i className="fa-regular fa-angle-right"></i>Our Passout
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa-regular fa-angle-right"></i>privacy &
-                        policy
-                      </a>
+                      <Link to="/contact">
+                        <i className="fa-regular fa-angle-right"></i>Contact Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/policies">
+                        <i className="fa-regular fa-angle-right"></i>Policies
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/terms">
+                        <i className="fa-regular fa-angle-right"></i>Terms and Conditions
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -147,51 +156,36 @@ const Footer = (props) => {
               data-wow-delay=".9s"
             >
               <div className="it-footer-widget footer-col-4">
-                <h4 className="it-footer-title">Gallery</h4>
-                <div className="it-footer-gallery-box">
-                  <div className="row gx-10">
-                    <div className="col-md-4 col-4">
-                      <div className="it-footer-thumb mb-10">
-                        <a href="#">
-                          <img src={footerImg1} alt="" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col-md-4 col-4">
-                      <div className="it-footer-thumb mb-10">
-                        <a href="#">
-                          <img src={footerImg2} alt="" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col-md-4 col-4 mb-10">
-                      <div className="it-footer-thumb">
-                        <a href="#">
-                          <img src={footerImg3} alt="" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col-md-4 col-4">
-                      <div className="it-footer-thumb">
-                        <a href="#">
-                          <img src={footerImg4} alt="" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col-md-4 col-4">
-                      <div className="it-footer-thumb">
-                        <a href="#">
-                          <img src={footerImg5} alt="" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col-md-4 col-4">
-                      <div className="it-footer-thumb">
-                        <a href="#">
-                          <img src={footerImg6} alt="" />
-                        </a>
-                      </div>
-                    </div>
+                <h4 className="it-footer-title">Contact Us</h4>
+                <div className="it-footer-contact">
+                  <p style={{ marginBottom: '15px', lineHeight: '1.6' ,color:"white"}}>
+                    <strong>ACADEMY OF INTERNAL AUDIT </strong>
+                  </p>
+                  <p style={{ marginBottom: '15px', lineHeight: '1.6',color:"white" }}>
+                    C-826, Vipul Plaza, Sector-81,<br />
+                    Faridabad, Delhi - NCR 121002,<br />
+                    India
+                  </p>
+                  <p style={{ marginBottom: '15px', lineHeight: '1.6',color:"white" }}>
+                    <strong>Email:</strong> support@aia.in.net<br />
+                    academyofia@gmail.com
+                  </p>
+                  <p style={{ marginBottom: '15px', lineHeight: '1.6',color:"white" }}>
+                    <strong>Phone:</strong> +91 93113 20114<br />
+                    0129 417 4177
+                  </p>
+                </div>
+                <div className="it-footer-payment mt-20">
+                  <h5 style={{ marginBottom: '10px',color:"orange" }}>Payment Modes Accepted</h5>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                    <i className="fa-brands fa-cc-visa" style={{ fontSize: '30px', color: '#1a1f71' }}></i>
+                    <i className="fa-brands fa-cc-mastercard" style={{ fontSize: '30px', color: '#eb001b' }}></i>
+                    <i className="fa-brands fa-cc-amex" style={{ fontSize: '30px', color: '#016fd0' }}></i>
+                    <i className="fa-brands fa-cc-paypal" style={{ fontSize: '30px', color: '#003087' }}></i>
+                  </div>
+                  <div className="mt-20" style={{ display: 'flex', alignItems: 'center' }}>
+                    <i className="fa-solid fa-phone-volume" style={{ fontSize: '24px', color: '#fff', marginRight: '10px' }}></i>
+                    <span style={{ fontSize: '18px', fontWeight: 'bold' ,color:"orange"}}>Toll Free: 1800 1200-2555</span>
                   </div>
                 </div>
               </div>
@@ -216,7 +210,7 @@ const Footer = (props) => {
                 }
               >
                 <p>
-                  Copyright &copy; 2024 <a href="#">edunity </a> || All Rights
+                  Copyright &copy; {new Date().getFullYear()} <a href="#">Academy of Internal Audit</a> || All Rights
                   Reserved
                 </p>
               </div>

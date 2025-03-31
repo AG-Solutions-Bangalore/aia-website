@@ -59,7 +59,7 @@ const About = () => {
               <span className="it-section-subtitle-3">
                 <img src={titleImg} alt=""></img> about us
               </span>
-              <h2 className="it-section-title-3 pb-30">
+              <h2 className="it-section-title-2 pb-30">
                 ACADEMY OF INTERNAL AUDIT
                 {/* <span>professional</span> */}
               </h2>
@@ -69,16 +69,16 @@ const About = () => {
                 material, we are committed towards success in professional
                 courses for our students and help them grow in their
                 professional journey.
-                </p>
-                <p>
+              </p>
+              <p>
                 We are pleased to say that our faculty has always been our
                 greatest strength who is always ready to assist students with
                 his knowledge theoretically and practically. We help aspirants
                 not only how to obtain international certifications, but also
                 how to have them in the real sense so that they can demonstrate
                 the same skills and competence in relevant areas as well.
-                </p>
-                <p>
+              </p>
+              <p>
                 Since 15 years, AIA has been teaching commerce students under
                 the name of Perfect Coaching Centre and now providing guidance
                 for Top Certification Courses as well.{" "}

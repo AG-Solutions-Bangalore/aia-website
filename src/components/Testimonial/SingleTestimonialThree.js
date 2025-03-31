@@ -3,30 +3,28 @@ import React from 'react';
 import Avatar from '../../assets/img/testimonial/avatar-1-1.png';
 
 const SingleTestimonialThree = (props) => {
-  const { itemClass, description, authorAvatar, authorName, designation } =
+  const { itemClass, description, authorAvatar, authorName, designation ,altText} =
     props;
 
   return (
-    <div className={itemClass ? itemClass : 'ed-testimonial-item p-relative'}>
-      <div className="ed-testimonial-ratting">
+    <div  className={itemClass ? itemClass : 'ed-testimonial-item p-relative'}>
+      {/* <div className="ed-testimonial-ratting">
         <i className="fa-solid fa-star"></i>
         <i className="fa-solid fa-star"></i>
         <i className="fa-solid fa-star"></i>
         <i className="fa-solid fa-star"></i>
         <i className="fa-solid fa-star"></i>
-      </div>
-      <div className="ed-testimonial-text">
-        <p>
+      </div> */}
+      <div style={{height:"22rem", }}  className="ed-testimonial-text">
+        <p style={{fontSize:"15px"}}>
           {description
             ? description
-            : ` “Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim.
-          Amet consectetur adipiscing”`}
+            : ` “description”`}
         </p>
       </div>
-      <div className="ed-testimonial-author-box d-flex align-items-center">
+      <div  className="ed-testimonial-author-box d-flex align-items-center">
         <div className="ed-testimonial-author mr-15">
-          <img src={authorAvatar ? authorAvatar : Avatar} alt="" />
+          <img  style={{height:"3rem", width:"3rem"}} src={authorAvatar ? authorAvatar : Avatar} alt={altText} />
         </div>
         <div>
           <h5>{authorName ? authorName : 'Ellen Perera'}</h5>

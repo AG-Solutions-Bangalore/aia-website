@@ -37,39 +37,10 @@ const FunFact = () => {
           className="it-funfact-bg-wrap orange-bg"
           style={{ backgroundImage: `url(${funFactBG})` }}
         >
-          {/* <div className="row gx-0">
-            <h1 className="py-3 text-center">
-              Numbers speak louder than words !!
-            </h1>
-            {counters.map((counter, index) => (
-              <div key={index} className="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
-                <div className="it-funfact-item d-flex align-items-center">
-                  <div className="it-funfact-icon">
-                    <span>
-                      <i className={counter.countIcon}></i>
-                    </span>
-                  </div>
-                  <div className="it-funfact-content">
-                    <h6>
-                      <Counter
-                        start={0}
-                        end={counter.countNum}
-                        duration={5}
-                        counterSubText={counter.countSubtext}
-                      />
-                    </h6>
-                    <span className="it-funfact-content-title">
-                      {counter.countTitle}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div> */}
           <div className="row gx-0 justify-content-center text-center">
-            <h1 className="py-3 text-center fw-bold display-6 display-md-5 display-lg-4">
+            <h2 className="py-3 text-center fw-bold display-6 display-md-5 display-lg-4">
               Numbers speak louder than words !!
-            </h1>
+            </h2>
 
             {counters.map((counter, index) => (
               <div

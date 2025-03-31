@@ -1,14 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import SectionTitle from '../../components/SectionTitle';
 import SingleTestimonialThree from '../../components/Testimonial/SingleTestimonialThree';
 
-import avatarImg1 from '../../assets/img/testimonial/avatar-1-1.png';
-import avatarImg2 from '../../assets/img/testimonial/avatar-1-2.png';
-import avatarImg3 from '../../assets/img/testimonial/avatar-1-3.png';
-
 const Testimonial = () => {
+  const [testimonials, setTestimonials] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      try {
+        const response = await fetch('https://agstest.online/public/api/web-fetch-testimonials');
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        setTestimonials(data.testimonials);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching testimonials:', error);
+        setError(error.message);
+        setLoading(false);
+      }
+    };
+
+    fetchTestimonials();
+  }, []);
+
   const sliderOption = {
     speed: 1500,
     loop: true,
@@ -29,6 +51,7 @@ const Testimonial = () => {
       },
     },
   };
+
   return (
     <div className="it-testimonial-area ed-testimonial-style-2 pt-120 pb-120 fix p-relative">
       <div className="container">
@@ -40,7 +63,7 @@ const Testimonial = () => {
                 subTitleClass="ed-section-subtitle"
                 subTitle="testimonial"
                 titleClass="ed-section-title"
-                title="Creating A Community Of Life Long Learners."
+                title="What Our Students Say About Us"
               />
             </div>
           </div>
@@ -48,74 +71,31 @@ const Testimonial = () => {
         <div className="row">
           <div className="col-xl-12">
             <div className="ed-testimonial-wrapper">
-              <div className="swiper-container ed-testimonial-active">
-                <Swiper
-                  modules={[Autoplay]}
-                  {...sliderOption}
-                  className="swiper-wrapper"
-                >
-                  <SwiperSlide className="swiper-slide">
-                    <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
-                      authorAvatar={avatarImg1}
-                      authorName="Ellen Perera"
-                      designation="CEO at House of Ramen"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
-                      authorAvatar={avatarImg2}
-                      authorName="Kathy Sullivan"
-                      designation="CEO at ordian it"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
-                      authorAvatar={avatarImg3}
-                      authorName="Elsie Stroud"
-                      designation="CEO at Edwards"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
-                      authorAvatar={avatarImg1}
-                      authorName="Ellen Perera"
-                      designation="CEO at House of Ramen"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
-                      authorAvatar={avatarImg2}
-                      authorName="Kathy Sullivan"
-                      designation="CEO at ordian it"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
-                      authorAvatar={avatarImg1}
-                      authorName="Ellen Perera"
-                      designation="CEO at House of Ramen"
-                    />
-                  </SwiperSlide>
-                </Swiper>
-              </div>
+              {loading ? (
+                <div className="text-center">Loading testimonials...</div>
+              ) : error ? (
+                <div className="text-center text-danger">Error loading testimonials: {error}</div>
+              ) : (
+                <div className="swiper-container ed-testimonial-active">
+                  <Swiper
+                    modules={[Autoplay]}
+                    {...sliderOption}
+                    className="swiper-wrapper"
+                  >
+                    {testimonials.map((testimonial) => (
+                      <SwiperSlide key={testimonial.id} className="swiper-slide">
+                        <SingleTestimonialThree
+                          description={`"${testimonial.testimonials_description}"`}
+                          authorAvatar={`https://aia.in.net/assets/images/testimonial/${testimonial.testimonials_image}`}
+                          authorName={testimonial.testimonials_name}
+                          designation={testimonial.testimonials_education}
+                          altText={testimonial.testimonials_image_alt}
+                        />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -123,4 +103,5 @@ const Testimonial = () => {
     </div>
   );
 };
+
 export default Testimonial;
