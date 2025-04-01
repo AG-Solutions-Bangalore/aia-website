@@ -43,11 +43,11 @@ const Video = () => {
             <div className="it-video-content">
               <span>Join Our New Session</span>
               <h3 className="it-video-title">
-                Call To Enroll Your Child <br />
-                <a href="tel:+91958423452">(+91)958423452</a>
+                Call To Enroll Today <br />
+                <a href="tel:+91958423452">(+91) 9311320114</a>
               </h3>
               <div className="it-video-button">
-                <Link className="ed-btn-square orange" to="/contact">
+                <Link className="ed-course-btn" to="#">
                   <span>
                     Explore Courses
                     <i>
@@ -58,7 +58,7 @@ const Video = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-5 col-lg-5 col-md-3 col-sm-3">
+          {/* <div className="col-xl-5 col-lg-5 col-md-3 col-sm-3">
             <div className="it-video-play-wrap d-flex justify-content-start justify-content-md-end align-items-center">
               <div className="it-video-play text-center">
                 <Link
@@ -73,7 +73,7 @@ const Video = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

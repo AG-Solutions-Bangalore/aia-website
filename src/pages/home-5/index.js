@@ -4,10 +4,14 @@ import HomeFiveMain from './HomeFiveMain';
 import HeaderFive from '../../components/Header/HeaderFive';
 import LogoWhite from "../../assets/img/logo/retina_logos.png";
 import Logo from '../../assets/img/logo/logo-white-2.png';
+import JoinUs from './JoinUs';
+import ShareLink from './ShareLink';
 
 const HomeFive = () => {
   return (
     <>
+    <JoinUs/>
+   
       <HeaderFive />
 
       <HomeFiveMain />

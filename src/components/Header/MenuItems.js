@@ -52,126 +52,10 @@ const MenuItems = (props) => {
 
   return (
     <ul>
-      <li className="has-dropdown p-static">
-        <Link
-          to="/"
-          className={`${home ? "expanded" : ""}`}
-          onClick={handleClick}
-        >
+        <li>
+        <Link to="/">
           <span>Home</span>
-          <button
-            className={`${
-              home
-                ? "dropdown-toggle-btn dropdown-opened"
-                : "dropdown-toggle-btn"
-            } d-xl-none `}
-            onClick={() => {
-              openMobileMenu("home");
-            }}
-          >
-            <i className="fal fa-angle-right"></i>
-          </button>
         </Link>
-        <div
-          className={
-            home
-              ? "it-submenu submenu has-home-img d-block"
-              : "it-submenu submenu has-home-img"
-          }
-        >
-          <div className="row gx-6 row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-5">
-            <div className="col home-img">
-              <div className="home-img-thumb mb-15">
-                <img src={homeImg1} alt="" />
-                <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="#">
-                    Multi Page
-                  </Link>
-                  <Link className="it-btn-white-sm" to="#">
-                    One Page
-                  </Link>
-                </div>
-              </div>
-              <div className="home-img-content text-center">
-                <h4 className="home-img-title">
-                  <Link to="#">Home 01</Link>
-                </h4>
-              </div>
-            </div>
-            <div className="col home-img">
-              <div className="home-img-thumb mb-15">
-                <img src={homeImg2} alt="" />
-                <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="#">
-                    Multi Page
-                  </Link>
-                  <Link className="it-btn-white-sm" to="#">
-                    One Page
-                  </Link>
-                </div>
-              </div>
-              <div className="home-img-content text-center">
-                <h4 className="home-img-title">
-                  <Link to="#">Home 02</Link>
-                </h4>
-              </div>
-            </div>
-            <div className="col home-img">
-              <div className="home-img-thumb mb-15">
-                <img src={homeImg3} alt="" />
-                <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="#">
-                    Multi Page
-                  </Link>
-                  <Link className="it-btn-white-sm" to="#">
-                    One Page
-                  </Link>
-                </div>
-              </div>
-              <div className="home-img-content text-center">
-                <h4 className="home-img-title">
-                  <Link to="#">Home 03</Link>
-                </h4>
-              </div>
-            </div>
-            <div className="col home-img">
-              <div className="home-img-thumb mb-15">
-                <img src={homeImg4} alt="" />
-                <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="#">
-                    Multi Page
-                  </Link>
-                  <Link className="it-btn-white-sm" to="#">
-                    One Page
-                  </Link>
-                </div>
-              </div>
-              <div className="home-img-content text-center">
-                <h4 className="home-img-title">
-                  <Link to="#">Home 04</Link>
-                </h4>
-              </div>
-            </div>
-            <div className="col home-img">
-              <div className="home-img-thumb mb-15">
-                <img src={homeImg5} alt="" />
-                <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="#">
-                    Multi Page
-                  </Link>
-                  <Link className="it-btn-white-sm" to="#">
-                    One Page
-                  </Link>
-                </div>
-              </div>
-              <div className="home-img-content text-center">
-                <h4 className="home-img-title">
-                  <Link to="#">Home 05</Link>
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
       </li>
       <li>
         <Link to="/about-us">
@@ -295,7 +179,7 @@ const MenuItems = (props) => {
         </Link>
       </li>
       <li>
-        <button class="ed-btn-square radius purple-4">Pay Now</button>
+        <button class="ed-course-btn">Pay Now</button>
       </li>
     </ul>
   );

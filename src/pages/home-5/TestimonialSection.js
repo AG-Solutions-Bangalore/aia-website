@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import SectionTitle from '../../components/SectionTitle';
 import SingleTestimonialThree from '../../components/Testimonial/SingleTestimonialThree';
+import BaseUrl, { ImageTestimonial } from '../../utils/BaseUrl';
 
 const Testimonial = () => {
   const [testimonials, setTestimonials] = useState([]);
@@ -12,7 +13,7 @@ const Testimonial = () => {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const response = await fetch('https://agstest.online/public/api/web-fetch-testimonials');
+        const response = await fetch(`${BaseUrl}/api/web-fetch-testimonials`);
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -57,7 +58,7 @@ const Testimonial = () => {
       <div className="container">
         <div className="it-testimonial-title-wrap mb-65">
           <div className="row justify-content-center">
-            <div className="col-xl-6">
+            <div className="col-xl-10">
               <SectionTitle
                 itemClass="it-testimonial-title-box text-center"
                 subTitleClass="ed-section-subtitle"
@@ -86,7 +87,7 @@ const Testimonial = () => {
                       <SwiperSlide key={testimonial.id} className="swiper-slide">
                         <SingleTestimonialThree
                           description={`"${testimonial.testimonials_description}"`}
-                          authorAvatar={`https://aia.in.net/assets/images/testimonial/${testimonial.testimonials_image}`}
+                          authorAvatar={`${ImageTestimonial}/${testimonial.testimonials_image}`}
                           authorName={testimonial.testimonials_name}
                           designation={testimonial.testimonials_education}
                           altText={testimonial.testimonials_image_alt}

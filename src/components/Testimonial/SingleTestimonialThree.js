@@ -15,8 +15,18 @@ const SingleTestimonialThree = (props) => {
         <i className="fa-solid fa-star"></i>
         <i className="fa-solid fa-star"></i>
       </div> */}
-      <div style={{height:"22rem", }}  className="ed-testimonial-text">
-        <p style={{fontSize:"15px"}}>
+      <div style={{height:"20rem", }}  className="ed-testimonial-text">
+        <p style={{fontSize:"14px",
+        textAlign:"justify"
+
+
+
+
+        }
+      
+      
+      
+      }>
           {description
             ? description
             : ` “description”`}

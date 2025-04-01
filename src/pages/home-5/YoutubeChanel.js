@@ -5,6 +5,7 @@ import SectionTitleTwo from '../../components/SectionTitle/SectionTitleTwo'
 import PrevArrow from '../../components/SVG/PrevArrow'
 import NextArrow from '../../components/SVG/NextArrow'
 import SingleTeamThree from '../../components/Team/SingleTeamThree'
+import BaseUrl, { ImageChannel } from '../../utils/BaseUrl'
 
 const YoutubeChanel = () => {
     const [youtubeChannels, setYoutubeChannels] = useState([])
@@ -14,7 +15,7 @@ const YoutubeChanel = () => {
     useEffect(() => {
         const fetchYoutubeChannels = async () => {
             try {
-                const response = await fetch('https://agstest.online/public/api/web-fetch-youtubeChannel')
+                const response = await fetch(`${BaseUrl}/api/web-fetch-youtubeChannel`)
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`)
@@ -118,9 +119,9 @@ const YoutubeChanel = () => {
                                         style={{ cursor: 'pointer' , }}
                                     >
                                         <SingleTeamThree
-                                            teamImage={`https://aia.in.net/assets/images/channel/${channel.channel_img}`}
-                                            authorName={channel.channel_img_alt.replace('YouTube Video - AIA', '').trim()}
-                                            designation="YouTube Video"
+                                            teamImage={`${ImageChannel}/${channel.channel_img}`}
+                                            // authorName={channel.channel_img_alt.replace('YouTube Video - AIA', '').trim()}
+                                            // designation="YouTube Video"
                                           
                                         />
                                     </SwiperSlide>

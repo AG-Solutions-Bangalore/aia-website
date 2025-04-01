@@ -1,86 +1,88 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import SectionTitle from '../../components/SectionTitle';
-import RightArrow from '../../components/SVG';
+import React from "react";
+import aboutImg from "../../assets/img/about/about_img.jpg";
+import titleImg from "../../assets/img/about/title-home2.png";
+import shapeImg1 from "../../assets/img/choose/shape-1-1.png";
+import shapeImg2 from "../../assets/img/choose/shape-1-2.png";
+import shapeImg3 from "../../assets/img/choose/shape-1-3.png";
+import shapeImg4 from "../../assets/img/choose/shape-1-4.png";
+import { Link } from "react-router-dom";
+import RightArrow from "../../components/SVG";
 
-import shapeImg1 from '../../assets/img/about/ed-shape-2.png';
-import shapeImg2 from '../../assets/img/about/ed-shape-1.png';
-import aboutImg1 from '../../assets/img/about/home_about.jpg';
-import aboutImg2 from '../../assets/img/about/ed-5-2.jpg';
-
-const About = () => {
+const WhyChooseUs = () => {
   return (
-    <div id="it-about" className="it-about-5-area p-relative fix pt-60 pb-120">
-      <div className="ed-about-5-shape-2">
-        <img src={shapeImg1} alt="" />
+    <div className="it-choose-area p-relative fix pt-180 pb-110">
+      <div className="it-choose-shape-4 d-none d-md-block">
+        <img src={shapeImg4} alt="" />
       </div>
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-xl-6 col-lg-6">
-            <div className="it-about-5-right">
-              <SectionTitle
-                itemClass="it-about-5-title-box pb-10 section-title-fixed-width-2"
-                subTitleClass="ed-section-subtitle"
-                subTitle="our about us"
-                titleClass="it-section-title-5"
-                title="ACADEMY OF INTERNAL AUDIT"
-              />
-              <div className="it-about-5-text mb-30">
-                <p>
-                  
-                AIA is an online training institute to secure success in international certification courses. With the proven study material, we are committed towards success in professional courses for our students and help them grow in their professional journey.
-                                                        <br /> 
-                                                        We are pleased to say that our faculty has always been our greatest strength who is always ready to assist students with his knowledge theoretically and practically. We help aspirants not only how to obtain international certifications, but also how to have them in the real sense so that they can demonstrate the same skills and competence in relevant areas as well.
-                                                        <br /> 
-                                                        Since 15 years, AIA has been teaching commerce students under the name of Perfect Coaching Centre and now providing guidance for Top Certification Courses as well.
-                                                    
-                </p>
-              </div>
-              <div className="ed-about-5-content">
-                <div className="it-about-5-list mb-10">
-                  <ul>
-                    <li>
-                      <i className="fa-regular fa-check"></i>Best Teaching
-                    </li>
-                    <li>
-                      <i className="fa-regular fa-check"></i>Quality Educators
-                    </li>
-                  </ul>
-                </div>
-                <div className="it-about-5-list mb-40">
-                  <ul>
-                    <li>
-                      <i className="fa-regular fa-check"></i>Expert Tutor
-                    </li>
-                    <li>
-                      <i className="fa-regular fa-check"></i>Affordable
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="it-feature-button">
-                <Link
-                  className="ed-btn-square orange"
-                  to="/student-registration"
-                >
-                  Read More
-                  <i>
-                    <RightArrow />
-                  </i>
-                </Link>
-              </div>
+      <div className="container ">
+        <div className="row align-items-center g-lg-5 g-4">
+          <div
+            className="col-xl-6 col-lg-6 wow animate__fadeInRight"
+            data-wow-duration=".9s"
+            data-wow-delay=".7s"
+          >
+            <div className="it-about-3-title-box">
+              <span className="it-section-subtitle-3">
+                <img src={titleImg} alt=""></img> about us
+              </span>
+              <h2 className="it-section-title-2 pb-30">
+                ACADEMY OF INTERNAL AUDIT
+                {/* <span>professional</span> */}
+              </h2>
+              <p>
+                AIA is an online training institute to secure success in
+                international certification courses. With the proven study
+                material, we are committed towards success in professional
+                courses for our students and help them grow in their
+                professional journey.
+              </p>
+              <p>
+                We are pleased to say that our faculty has always been our
+                greatest strength who is always ready to assist students with
+                his knowledge theoretically and practically. We help aspirants
+                not only how to obtain international certifications, but also
+                how to have them in the real sense so that they can demonstrate
+                the same skills and competence in relevant areas as well.
+              </p>
+              <p>
+                Since 15 years, AIA has been teaching commerce students under
+                the name of Perfect Coaching Centre and now providing guidance
+                for Top Certification Courses as well.{" "}
+              </p>
             </div>
+            <div className="it-feature-button">
+                          <Link
+                            className="ed-course-btn "
+                            to="/about-us"
+                          >
+                            Read More
+                            <i>
+                              <RightArrow />
+                            </i>
+                          </Link>
+                        </div>
           </div>
-          <div className="col-xl-6 col-lg-6">
-            <div className="ed-about-5-right d-flex justify-content-between p-relative">
-              <div className="ed-about-5-thumb-2">
-                <img src={aboutImg1} alt="" />
-              </div>
-              <div className="ed-about-5-thumb-1">
-                {/* <img src={aboutImg2} alt="" /> */}
-              </div>
-              <div className="ed-about-5-shape-1">
-                <img src={shapeImg2} alt="" />
+        
+          <div
+            className="col-xl-6 col-lg-6 mb-30 wow animate__fadeInRight"
+            data-wow-duration=".9s"
+            data-wow-delay=".7s"
+          >
+            <div className="it-choose-thumb-box text-center text-lg-end">
+              <div className="it-choose-thumb p-relative">
+                <img
+                  src={aboutImg}
+                  alt="CFE,CIA,CIA chalelenge - Academy of Internal Audit"
+                />
+                <div className="it-choose-shape-1">
+                  <img src={shapeImg1} alt="" />
+                </div>
+                <div className="it-choose-shape-2">
+                  <img src={shapeImg2} alt="" />
+                </div>
+                <div className="it-choose-shape-3 d-none d-lg-block">
+                  <img src={shapeImg3} alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -89,4 +91,4 @@ const About = () => {
     </div>
   );
 };
-export default About;
+export default WhyChooseUs;

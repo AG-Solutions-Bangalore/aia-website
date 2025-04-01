@@ -23,12 +23,28 @@ const SingleBanner = (props) => {
           : 'ed-slider-3-height ed-slider-3-overley  p-relative'
       }
     >
-      <div
+  
+      {/* <div
         className="ed-slider-3-bg"
-        style={{ backgroundImage: `url(${sliderImage ? sliderImage : Image})` }}
+      style={{ backgroundImage: `url(${sliderImage ? sliderImage : Image})`, object:"contain" }}
           aria-label={altText || "Banner image"}
         role="img"
-      ></div>
+     ></div>  */}
+    <div
+  className="ed-slider-3-bg"
+  style={{
+    backgroundImage: `url(${sliderImage ? sliderImage : Image})`,
+    backgroundSize: "contain", // Ensure the full image is visible
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    width: "100%", 
+    height: "100%", 
+    minHeight: "300px", // Adjust as per requirement
+  }}
+  aria-label={altText || "Banner image"}
+  role="img"
+></div>
+
       <div className="container">
         <div className="row">
           <div className="col-xl-7 col-lg-8">

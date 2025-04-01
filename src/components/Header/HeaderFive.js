@@ -284,7 +284,7 @@ const HeaderFive = (props) => {
                       <i>
                         <img src={mailSVG} alt="" />
                       </i>
-                      <a href="mailto:pacargoinfo@gmail.com">
+                      <a href="mailto:support@aia.in.net">
                         support@aia.in.net{" "}
                       </a>
                     </li>
@@ -395,8 +395,11 @@ const HeaderFive = (props) => {
           </div>
           <div className="itoffcanvas__text">
             <p>
-              Suspendisse interdum consectetur libero id. Fermentum leo vel orci
-              porta non. Euismod viverra nibh cras pulvinar suspen.
+            AIA is an online training institute to secure success in
+                international certification courses. With the proven study
+                material, we are committed towards success in professional
+                courses for our students and help them grow in their
+                professional journey.
             </p>
           </div>
           <div className="it-menu-mobile d-xl-none">
@@ -420,7 +423,7 @@ const HeaderFive = (props) => {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Email</span>
-                <a href="maito:hello@yourmail.com">hello@yourmail.com</a>
+                <a href="maito:support@aia.in.net">support@aia.in.net</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -431,7 +434,7 @@ const HeaderFive = (props) => {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Phone</span>
-                <a href="tel:(00)45611227890">(00) 456 1122 7890</a>
+                <a href="tel:+919311320114">+919311320114</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -443,15 +446,18 @@ const HeaderFive = (props) => {
               <div className="itoffcanvas__info-address">
                 <span>Location</span>
                 <a
-                  href="htits://www.google.com/maps/@37.4801311,22.8928877,3z"
+                  href="https://maps.google.com/maps?q=Academy of Internal Audit, SRS City, Sector 87, Faridabad, Haryana 121002&t=&z=10&ie=UTF8&iwloc="
                   target="_blank"
                 >
-                  Riverside 255, San Francisco.
+                  ACADEMY OF INTERNAL AUDIT
+                  <br/>
+
+C-826, Vipul Plaza, Sector-81, <br/> Faridabad, Delhi - NCR 121002, <br/> India
                 </a>
               </div>
             </div>
           </div>
-          <OffCanvasInsta />
+          {/* <OffCanvasInsta /> */}
         </div>
       </div>
 

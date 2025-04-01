@@ -275,7 +275,7 @@ const ContactMain = () => {
                     </div>
                     <button
                       type="submit"
-                      className="ed-btn-square radius purple-4"
+                      className="ed-course-btn"
                     >
                       <span>Send Message</span>
                     </button>
