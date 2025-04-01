@@ -6,38 +6,29 @@ import PrevArrow from '../../components/SVG/PrevArrow'
 import NextArrow from '../../components/SVG/NextArrow'
 import 'swiper/css'
 
+
+// import local image 
+import alumni1 from '../../assets/img/alumni/alumni (1).jpg'
+import alumni2 from '../../assets/img/alumni/alumni (2).jpg'
+import alumni3 from '../../assets/img/alumni/alumni (3).jpg'
+import alumni4 from '../../assets/img/alumni/alumni (4).jpg'
+import alumni5 from '../../assets/img/alumni/alumni (5).jpg'
+import alumni6 from '../../assets/img/alumni/alumni (6).jpg'
+import alumni7 from '../../assets/img/alumni/alumni (7).jpg'
+import alumni8 from '../../assets/img/alumni/alumni (8).jpg'
+import alumni9 from '../../assets/img/alumni/alumni (9).jpg'
+import alumni10 from '../../assets/img/alumni/alumni (10).jpg'
+import alumni11 from '../../assets/img/alumni/alumni (11).jpg'
+import alumni12 from '../../assets/img/alumni/alumni (12).jpg'
+import alumni13 from '../../assets/img/alumni/alumni (13).jpg'
+import alumni14 from '../../assets/img/alumni/alumni (14).jpg'
+import alumni15 from '../../assets/img/alumni/alumni (15).jpg'
+
 const AlumniWork = () => {
     const alumniImages = [
-        'https://aia.in.net/assets/images/alumni/alumni%20(1).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(2).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(3).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(4).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(5).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(6).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(7).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(8).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(9).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(10).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(11).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(12).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(13).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(14).jpg',
-        'https://aia.in.net/assets/images/alumni/alumni%20(15).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(16).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(17).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(18).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(19).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(20).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(21).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(22).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(23).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(24).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(25).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(26).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(27).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(28).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(29).jpg',
-        'https://aia.in.net/assets/images/alumni1/alumni%20(30).jpg'
+        alumni1, alumni2, alumni3, alumni4, alumni5,
+        alumni6, alumni7, alumni8, alumni9, alumni10,
+        alumni11, alumni12, alumni13, alumni14, alumni15,
     ]
 
     const sliderOptions = {
@@ -51,15 +42,15 @@ const AlumniWork = () => {
         },
         breakpoints: {
             1400: {
-                slidesPerView: 4,
+                slidesPerView: 6,
                 spaceBetween: 25
             },
             1200: {
-                slidesPerView: 3,
+                slidesPerView: 6,
                 spaceBetween: 20
             },
             768: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 15
             },
             576: {
@@ -121,7 +112,7 @@ const AlumniWork = () => {
                         {alumniImages.map((image, index) => (
                             <SwiperSlide key={`ltr-${index}`}>
                                 <div className="alumni-img-container-alumni" style={{
-                                    height: '150px',
+                                    height: '110px',
                                     overflow: 'hidden',
                                     borderRadius: '8px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
@@ -134,7 +125,7 @@ const AlumniWork = () => {
                                         style={{
                                             width: '100%',
                                             height: '100%',
-                                            objectFit: 'cover',
+                                            objectFit: 'contain',
                                             transition: 'transform 0.3s ease',
                                         }}
                                         className="img-hover-scale"
@@ -175,7 +166,7 @@ const AlumniWork = () => {
                         {[...alumniImages].reverse().map((image, index) => (
                             <SwiperSlide key={`rtl-${index}`}>
                                 <div className="alumni-img-container-alumni" style={{
-                                    height: '150px',
+                                    height: '110px',
                                     overflow: 'hidden',
                                     borderRadius: '8px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
@@ -188,7 +179,7 @@ const AlumniWork = () => {
                                         style={{
                                             width: '100%',
                                             height: '100%',
-                                            objectFit: 'cover',
+                                            objectFit: 'contain',
                                             transition: 'transform 0.3s ease',
                                         }}
                                         className="img-hover-scale"

@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 import bgImg from "../../assets/img/footer/bg-1-1.jpg";
 import LogoWhite from "../../assets/img/logo/retina_logos.png";
-
+import tollfree from "../../assets/img/footer/tollfree.png";
+import payment from "../../assets/img/footer/payment.png";
 const Footer = (props) => {
   const { footerClass, footerLogo, copyrightTextClass } = props;
 
@@ -125,17 +126,17 @@ const Footer = (props) => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/about">
+                      <Link to="/about-us">
                         <i className="fa-regular fa-angle-right"></i>About Us
                       </Link>
                     </li>
                     <li>
-                      <Link to="/blog">
+                      <Link to="#">
                         <i className="fa-regular fa-angle-right"></i>Blog
                       </Link>
                     </li>
                     <li>
-                      <Link to="/passout">
+                      <Link tto="#">
                         <i className="fa-regular fa-angle-right"></i>Our Passout
                       </Link>
                     </li>
@@ -145,12 +146,12 @@ const Footer = (props) => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/policies">
+                      <Link>
                         <i className="fa-regular fa-angle-right"></i>Policies
                       </Link>
                     </li>
                     <li>
-                      <Link to="/terms">
+                      <Link to="#">
                         <i className="fa-regular fa-angle-right"></i>Terms and
                         Conditions
                       </Link>
@@ -180,6 +181,7 @@ const Footer = (props) => {
                     style={{
                       marginBottom: "15px",
                       lineHeight: "1.6",
+                      fontSize:"15px",
                       color: "white",
                     }}
                   >
@@ -193,72 +195,71 @@ const Footer = (props) => {
                     style={{
                       marginBottom: "15px",
                       lineHeight: "1.6",
+                      fontSize:"15px",
                       color: "white",
                     }}
                   >
-                    <strong>Email:</strong> support@aia.in.net
+                    <a href="mailto:support@aia.in.net">support@aia.in.net</a> 
                     <br />
-                    academyofia@gmail.com
+                    <a href="mailto:academyofia@gmail.com">academyofia@gmail.com</a>
+                    
                   </p>
                   <p
                     style={{
                       marginBottom: "15px",
                       lineHeight: "1.6",
+                      fontSize:"15px",
                       color: "white",
                     }}
                   >
-                    <strong>Phone:</strong> +91 93113 20114
+                    <a href="tel:(+91)9311320114">+91 93113 20114</a>
                     <br />
-                    0129 417 4177
+                    <a href="tel:0129 417 4177">0129 417 4177</a>
                   </p>
                 </div>
-                <div className="it-footer-payment mt-20">
-                  <h5 style={{ marginBottom: "10px", color: "orange" }}>
-                    Payment Modes Accepted
-                  </h5>
-                  <div
-                    style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}
-                  >
-                    <i
-                      className="fa-brands fa-cc-visa"
-                      style={{ fontSize: "30px", color: "#1a1f71" }}
-                    ></i>
-                    <i
-                      className="fa-brands fa-cc-mastercard"
-                      style={{ fontSize: "30px", color: "#eb001b" }}
-                    ></i>
-                    <i
-                      className="fa-brands fa-cc-amex"
-                      style={{ fontSize: "30px", color: "#016fd0" }}
-                    ></i>
-                    <i
-                      className="fa-brands fa-cc-paypal"
-                      style={{ fontSize: "30px", color: "#003087" }}
-                    ></i>
-                  </div>
-                  <div
-                    className="mt-20"
-                    style={{ display: "flex", alignItems: "center" }}
-                  >
-                    <i
-                      className="fa-solid fa-phone-volume"
-                      style={{
-                        fontSize: "24px",
-                        color: "#fff",
-                        marginRight: "10px",
-                      }}
-                    ></i>
-                    <span
-                      style={{
-                        fontSize: "18px",
-                        fontWeight: "bold",
-                        color: "orange",
-                      }}
-                    >
-                      Toll Free: 1800 1200-2555
-                    </span>
-                  </div>
-                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="it-footer-payment mt-20"
+            style={{
+              marginBottom: "10px",
+              display: "flex",
+              width: "100%",
+              alignItems: "center",
+              justifyContent: "space-around",
+            }}
+          >
+            <h5 style={{ marginBottom: "10px", color: "orange" }}>
+              Payment Modes Accepted
+            </h5>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: "2rem",
+              }}
+            >
+              <div>
+                <img
+                  style={{
+                    height: "80%",
+                    width: "80%",
+                  }}
+                  src={payment}
+                  alt="Payment Mode"
+                />
+              </div>
+              <div>
+                <img
+                  style={{
+                    height: "80%",
+                    width: "80%",
+                  }}
+                  src={tollfree}
+                  alt="Toll Free"
+                />
               </div>
             </div>
           </div>
@@ -282,8 +283,7 @@ const Footer = (props) => {
               >
                 <p>
                   Copyright &copy; {new Date().getFullYear()}{" "}
-                  <a href="#">Academy of Internal Audit</a> || All Rights
-                  Reserved
+                  <a href="#">AG Solutions </a> || All Rights Reserved
                 </p>
               </div>
             </div>

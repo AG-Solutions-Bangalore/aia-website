@@ -35,7 +35,7 @@ const BannerSlider = () => {
       nextEl: '.slider-next',
       prevEl: '.slider-prev',
     },
-    effect: 'fade',
+    // effect: 'fade',
   };
 
   return (

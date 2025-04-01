@@ -5,9 +5,9 @@ const CTA = () => {
     <div
       style={{
         padding: "4px",
-        textAlign: "center",
+        textAlign: "left",
         background: "#F0FFFF",
-        fontWeight: 700,
+        fontWeight: 500,
       }}
     >
       <span>

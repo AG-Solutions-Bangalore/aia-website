@@ -23,7 +23,7 @@ const SectionTitle = (props) => {
         {subTitle ? subTitle : 'CATEGORIES'}{' '}
         {hasAfterImage && <img src={titleImage} alt="" />}
       </span>
-      <h4 className={titleClass ? titleClass : 'ed-section-title'}>
+      <h4  className={titleClass ? titleClass : 'ed-section-title'}>
         {title ? title : 'Browse By Categories'}
       </h4>
       <p>{description ? description : ''}</p>

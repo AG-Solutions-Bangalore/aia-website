@@ -49,6 +49,7 @@ import {
   Testimonial,
 } from "../pages";
 import { HelmetProvider } from "react-helmet-async";
+import ShareLink from "../pages/home-5/ShareLink";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -72,6 +73,7 @@ function App() {
       <HelmetProvider>
         <ScrollToTop />
         <LoadTop />
+         <ShareLink/>
         <Routes>
           <Route path="/" element={<HomeFive />} />
           <Route path="/home-one-page" element={<HomeOnePage />} />

@@ -11,7 +11,7 @@ const SingleTeamThree = (props) => {
       <div className="ed-team-thumb fix">
         <img src={teamImage ? teamImage : Image} alt="" />
       </div>
-      <div style={{height:"8rem"}} className="ed-team-content p-relative">
+      {/* <div style={{height:"5rem"}} className="ed-team-content p-relative"> */}
         {/* <div className="ed-team-social-box">
           <button>
             <i className="fa-light fa-share-nodes"></i>
@@ -28,15 +28,15 @@ const SingleTeamThree = (props) => {
             </a>
           </div>
         </div> */}
-        <div className="ed-team-author-box">
+        {/* <div className="ed-team-author-box">
           <h4 className="ed-team-title">
             <Link to="/teacher-details">
               {authorName ? authorName : 'Micheal Hammond'}
             </Link>
           </h4>
           <span>{designation ? designation : 'Teacher'}</span>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </div>
   );
 };

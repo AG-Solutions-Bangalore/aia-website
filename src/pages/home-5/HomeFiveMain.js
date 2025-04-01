@@ -12,13 +12,22 @@ import WhyChooseUs from './WhyChooseUsSection';
 import Work from './WorkSection';
 import YoutubeChanel from './YoutubeChanel';
 import AlumniWork from './AlumniWork';
+import TextSlider from './TextSlider';
+import MetaTitle from '../../components/MetaTitle/MetaTitle';
 
 const HomeFiveMain = () => {
   return (
     <main>
+    
+            <MetaTitle
+              title="Best Training Institute For Top Certification Courses- AIA"
+              description="Academy of Internal Audit (AIA) is Online Training Institute for Global Certification Courses like CIA, CFE, and other International Certification Courses."
+            />
       <Banner />
       <CTA />
       <Course />
+      <Video />
+      <TextSlider/>
       <About />
       <WhyChooseUs />
      <YoutubeChanel/>
@@ -29,7 +38,7 @@ const HomeFiveMain = () => {
      
     
       
-      {/* <Video /> */}
+     
       {/* <FAQ /> */}
       {/* <Work /> */}
       <Blog />

@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import shapeImg from '../../assets/img/course/ed-item-shape.png';
 import RightArrowThin from '../SVG/RightArrowThin';
 
-const SingleCourse = (props) => {
+const SingleCourseWithList = (props) => {
   const {
     itemClass,
     title,
-    description,
+    listItems = [], 
     btnText = 'View Course',
     titleStyle = {},
-    descriptionStyle = {}
+    contentStyle = {}
   } = props;
 
   return (
@@ -44,17 +44,26 @@ const SingleCourse = (props) => {
           <Link to="#">{title}</Link>
         </h4>
         
-        {/* Description */}
+        {/* Description with Bullet Points */}
         <div 
           className="it-course-info pb-15 mb-30"
           style={{
             flex: 1,
             marginBottom: '1rem',
+            fontSize:"14px",
             overflow: 'hidden',
-            ...descriptionStyle
+            ...contentStyle
           }}
         >
-          <span>{description}</span>
+          <ul style={{
+            paddingLeft: '1rem',
+            margin: 0,
+            listStyleType: 'disc'
+          }}>
+            {listItems.map((item, index) => (
+              <li key={index} style={{ marginBottom: '0.5rem' }}>{item}</li>
+            ))}
+          </ul>
         </div>
         
         {/* Button */}
@@ -75,4 +84,4 @@ const SingleCourse = (props) => {
   );
 };
 
-export default SingleCourse;
+export default SingleCourseWithList;

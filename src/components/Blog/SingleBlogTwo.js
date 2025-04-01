@@ -28,10 +28,7 @@ const SingleBlogTwo = (props) => {
       </div>
       <div className="it-blog-content">
         <div className="it-blog-meta pb-2">
-          <span>
-            <i className="fa-light fa-user"></i>
-            {authorName ? authorName : 'Sunilra smoth'}
-          </span>
+      
           <span>
             <i className="fa-light fa-calendar-days"></i>
             {publishedDate ? publishedDate : 'March 28, 2023'}

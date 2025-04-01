@@ -5,6 +5,8 @@ import shapeImg1 from "../../assets/img/choose/shape-1-1.png";
 import shapeImg2 from "../../assets/img/choose/shape-1-2.png";
 import shapeImg3 from "../../assets/img/choose/shape-1-3.png";
 import shapeImg4 from "../../assets/img/choose/shape-1-4.png";
+import { Link } from "react-router-dom";
+import RightArrow from "../../components/SVG";
 
 const WhyChooseUs = () => {
   return (
@@ -48,7 +50,9 @@ const WhyChooseUs = () => {
                 for Top Certification Courses as well.{" "}
               </p>
             </div>
+            
           </div>
+        
           <div
             className="col-xl-6 col-lg-6 mb-30 wow animate__fadeInRight"
             data-wow-duration=".9s"
